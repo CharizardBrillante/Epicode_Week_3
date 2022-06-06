@@ -1,0 +1,88 @@
+/* --------------------------------- GENERAL ----------------------------- */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+    line-height: 1.5rem;
+}
+
+
+/* --------------------------------- HEADER ----------------------------- */
+
+header {
+    background: black;
+    position:relative;
+    height: 210px;
+}
+
+
+header #logo {
+    width: 200px;
+    position: absolute;
+}
+
+/* --------------------------------- MAIN ----------------------------- */
+main {
+    padding: 2em;
+}
+
+main .two-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    grid-column-gap: 1em;
+    margin: 3em 0em;
+}
+
+.btn {
+    text-align: center;
+    background: #f7df1e;
+    color: black;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 1em;
+    padding: 1em;
+}
+
+.btn:hover {
+    background: #fff080;
+}
+
+
+#quoteContainer {
+    border: 1px solid black;
+    height: 20vh;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    justify-content: center;
+    justify-items: center;
+    grid-row-gap: 1em;;
+    padding: 2em 0em;
+}
+
+#quotes {
+    font-size: 1.5rem;
+}
+
+#gen {
+    width: 200px;
+    margin: 0;
+    padding: .5em 0em;
+    text-align: center;
+    background: #f7df1e;
+    color: black;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+#gen:hover {
+    background: #fff080;
+}
