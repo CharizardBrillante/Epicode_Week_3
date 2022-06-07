@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gentium+Plus&family=Rubik&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Death Tool</title>
+</head>
+<body>
+    <header>
+        <img src="img/tombstone.svg" alt="lapide">
+        <h1>Death Tool</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Galleria</a></li>
+                <li><a href="#">Chi siamo</a></li>
+                <li><a href="#">Contatti</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Scopri quando morirai</h1>
+        <p>Compila il form e scopri quanto manca alla tua morte.<br>
+            Mi raccomando, sii sincero!</p>
+        <div id="container">
+            <div id="form">
+                <form>
+                    <label for="name">Nome</label>
+                    <input type="text" name="name" id="name"> <br>
+                    <label for="birth">Data di nascita</label>
+                    <input type="date" name="birth" id="birth"> <br>
+                    <fieldset>Stato Civile</fieldset>
+                    <input type="radio" name="single" value="Single"> 
+                    <label for="single">Single</label>
+                    <input type="radio" name="sposato" value="Sposato">
+                    <label for="sposato">Sposato</label>
+                    <fieldset>Fumi?</fieldset>
+                    <input type="radio" name="fumo">
+                    <label for="fumo">Sì</label>
+                    <input type="radio" name="non-fumo">
+                    <label for="non-fumo">No</label>
+                    <fieldset>Bevi?</fieldset>
+                    <input type="radio" name="molto">
+                    <label for="molto">Molto</label>
+                    <input type="radio" name="poco">
+                    <label for="poco">Poco</label>
+                    <input type="radio" name="non-bevo">
+                    <label for="non-bevo">Non bevo</label>
+                    <fieldset>Sei ricco?</fieldset>
+                    <input type="radio" name="ricco">
+                    <label for="ricco">Sì</label>
+                    <input type="radio" name="povero">
+                    <label for="povero">No</label> <br>
+                </form>
+                <button id="submit" onclick="setInterval(countDown, 1000, deathDate)">Calcola!</button> 
+            </div>
+            <div id="timer">
+
+            </div>
+        </div>
+
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>
