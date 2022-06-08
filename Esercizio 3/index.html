@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gentium+Plus&family=Rubik&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Death Tool</title>
+</head>
+<body>
+    <!------------------------------------------- HEADER ---------------------------------------->
+    <header>
+        <img src="img/tombstone.svg" alt="lapide">
+        <h1><span>Death Tool</span></h1>
+        <nav>
+            <ul>
+                <li><a href="#">Galleria</a></li>
+                <li><a href="#">Chi siamo</a></li>
+                <li><a href="#">Contatti</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!------------------------------------------- MAIN ------------------------------------------->
+    <main>
+        <h1>Scopri quando morirai</h1>
+        <p>Compila il form e scopri quanto manca alla tua morte.<br>
+            Mi raccomando, sii sincero!</p>
+        <div id="container">
+            <div id="form"> <!--------------------- FORM ------------------------------>
+                <form>
+                    <label for="name" class="label">Nome</label> <!--NAME-->
+                    <input type="text" name="name" id="name"> <br>
+                    <label for="birth" class="label">Data di nascita</label> <!--BIRTH-->
+                    <input type="date" name="birth" id="birth"> <br>
+                    <fieldset class="label">Stato Civile</fieldset> <!--STATO CIVILE-->
+                    <input type="radio" name="single" value="Single"> 
+                    <label for="single" class="radio">Single</label>
+                    <input type="radio" name="fidanzato" value="Fidanzato"> 
+                    <label for="fidanzato" class="radio">Fidanzato</label>
+                    <input type="radio" name="sposato" value="Sposato">
+                    <label for="sposato" class="radio">Sposato</label>
+                    <fieldset class="label">Fumi?</fieldset> <!--FUMATORE-->
+                    <input type="radio" name="fumo">
+                    <label for="fumo" class="radio">Sì</label>
+                    <input type="radio" name="non-fumo">
+                    <label for="non-fumo" class="radio">No</label>
+                    <fieldset class="label">Bevi?</fieldset> <!--BEVITORE-->
+                    <input type="radio" name="molto">
+                    <label for="molto" class="radio">Molto</label>
+                    <input type="radio" name="poco">
+                    <label for="poco" class="radio">Poco</label>
+                    <input type="radio" name="non-bevo">
+                    <label for="non-bevo" class="radio">Non bevo</label>
+                    <fieldset class="label">Sei ricco?</fieldset> <!--RICCO-->
+                    <input type="radio" name="ricco">
+                    <label for="ricco" class="radio">Sì</label>
+                    <input type="radio" name="povero">
+                    <label for="povero" class="radio">No</label> <br>
+                </form> 
+                <button id="submit" onclick="setInterval(countDown, 1000, deathDate)">Calcola!</button> 
+            </div> <!---------------------------- FINE FORM --------------------------->
+            
+            <div id="timer"> <!-- Apparirà un countdown dopo il submit del form-->
+
+            </div>
+        </div>
+
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
