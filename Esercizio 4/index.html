@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="container">
+        <div id="form">
+            <form>
+                <label for="to-rain">Inserisci una frase:</label>
+                <input type="text" name="to-rain" id="to-rain">
+            </form>
+            <button onclick="getString()">Inserisci</button>
+            <button onclick="setInterval(draw, 50)">Falla piovere!</button>
+        </div>
+
+        <canvas id="matrix"></canvas>
+    </div>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>
