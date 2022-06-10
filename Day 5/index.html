@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Una bizzarra calcolatrice online">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Calcolatrice online</title>
+</head>
+<body>
+    <div id="container">
+
+        <div id="calculator" class="calculator">
+
+            <div id="calculator-screen" class="calculator-screen">0</div>
+            
+            <div id="calculator-keys" class="calculator-keys">
+            
+                <button class="operator" data-ops="plus" onclick="moveNum('plus')">+</button>
+                <button class="operator" data-ops="minus" onclick="moveNum('minus')">-</button>
+                <button class="operator" data-ops="times" onclick="moveNum('times')">&times;</button>
+                <button class="operator" data-ops="divide" onclick="moveNum('divide')">&divide;</button>
+            
+                <button class="num" data-num="7" onclick="getNum('7')">7</button>
+                <button class="num" data-num="8" onclick="getNum('8')">8</button>
+                <button class="num" data-num="9" onclick="getNum('9')">9</button>
+            
+                <button class="num" data-num="4" onclick="getNum('4')">4</button>
+                <button class="num" data-num="5" onclick="getNum('5')">5</button>
+                <button class="num" data-num="6" onclick="getNum('6')">6</button>
+            
+                <button class="num" data-num="1" onclick="getNum('1')">1</button>
+                <button class="num" data-num="2" onclick="getNum('2')">2</button>
+                <button class="num" data-num="3" onclick="getNum('3')">3</button>
+            
+                <button class="clear" id="clear" onclick="clearScreen()">C</button>
+                <button class="num" data-num="0" onclick="getNum('0')">0</button>
+                <button class="decimal" data-num="." onclick="getNum('.')">.</button>
+            
+                <button class="operator" id="equals" data-result="" onclick="displayNum(); setTimeout(surprise, 100)">=</button>
+        
+            </div>
+        </div>
+        </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
